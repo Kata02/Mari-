@@ -1,22 +1,20 @@
 package SuperMario;
+
 import java.util.Scanner;
 
 
 public class Mario {
 
-	public static void main(String[] args) {
-		
-		
-		
-		System.out.println("Princess Peach is kidnapped again by Bowser! Help Mario to save her!");
-		System.out.println("Please write to the task!");
-		
-		Scanner s = new Scanner(System.in);
-		StringBuilder sb = new StringBuilder("");
-		sb.append(s.nextLine());
-		s.close();
-		System.out.println("Contents of StringBuilder:" + sb);
-		
+    public static void main(String[] args) {
+        System.out.println("Princess Peach is kidnapped again by Bowser! Help Mario to save her!");
+        System.out.println("Please write to the task!");
+
+        Scanner s = new Scanner(System.in);
+        StringBuilder sb = new StringBuilder("");
+        sb.append(s.nextLine());
+        s.close();
+        System.out.println("Contents of StringBuilder:" + sb);
+
 		/*Object obj = new String(" is a string");
 		sb.append(obj);
 		System.out.println("Value after adding object:"+sb);
@@ -31,10 +29,10 @@ public class Mario {
 
 */
 //String br = sb.toString();
-		
-		//System.out.println("Contents of StringBuilder:" + sb);
-		//System.out.println( sb.indexOf("piranja") );
-		//System.out.println( sb.substring(sb.length()) );
+
+        //System.out.println("Contents of StringBuilder:" + sb);
+        //System.out.println( sb.indexOf("piranja") );
+        //System.out.println( sb.substring(sb.length()) );
 		/*
 		int start = 0;
 		int end = 01;
@@ -42,14 +40,14 @@ public class Mario {
 		System.out.println("Results:" + str);
 		
 		*/
-		String str = " ";
-		int fromIndex = 10;
-		int index = sb.indexOf(str, fromIndex);
-		System.out.println("index:" + index);
-				
-			
-		String result = sb.substring(0,sb.length());
-		System.out.println("Result:" + result);
+        String str = " ";
+        int fromIndex = 10;
+        int index = sb.indexOf(str, fromIndex);
+        System.out.println("index:" + index);
+
+
+        String result = sb.substring(0, sb.length());
+        System.out.println("Result:" + result);
 		/*	
 		sb.append(" ");
 		System.out.println("Contents of StringBuilder:" + sb);
@@ -64,13 +62,13 @@ public class Mario {
 		System.out.println("Value after adding string:"+sb);
 		
 		*/
-		/*Egy adott StringBuilder bármelyik karakterét megkaphatjuk a charAt(i) metódussal, ahova az i helyére írjuk be, hogy hányadik karaktert szeretnénk megkapni. A karakterek indexelése a tömbökhöz hasonlóan 0-val kezdõdik. Fontos, hogy ez egy karakter típust ad vissza! Bármely StringBuilder elsõ karaktere az sb.charAt(0), az utolsó pedig az sb.charAt( sb.length()-1 )
+		/*Egy adott StringBuilder bï¿½rmelyik karakterï¿½t megkaphatjuk a charAt(i) metï¿½dussal, ahova az i helyï¿½re ï¿½rjuk be, hogy hï¿½nyadik karaktert szeretnï¿½nk megkapni. A karakterek indexelï¿½se a tï¿½mbï¿½khï¿½z hasonlï¿½an 0-val kezdï¿½dik. Fontos, hogy ez egy karakter tï¿½pust ad vissza! Bï¿½rmely StringBuilder elsï¿½ karaktere az sb.charAt(0), az utolsï¿½ pedig az sb.charAt( sb.length()-1 )
 		StringBuilder sb = new StringBuilder("abrakadabra");*/
-		System.out.println(sb.charAt(3)); // a 4. karakter (3-as index!)
-		//sb.charAt(0); // 1. (üres StringBuilder-nél indexelési hiba!)
-		//sb.charAt( sb.length()-1 ); // utolsó karakter
-		
-		System.out.println( sb.indexOf("p") ); 
+        System.out.println(sb.charAt(3)); // a 4. karakter (3-as index!)
+        //sb.charAt(0); // 1. (ï¿½res StringBuilder-nï¿½l indexelï¿½si hiba!)
+        //sb.charAt( sb.length()-1 ); // utolsï¿½ karakter
+
+        System.out.println(sb.indexOf("p"));
 /*
 System.out.println( sb.lastIndexOf("piranja") );
 String str = "a";
@@ -78,22 +76,7 @@ int fromIndex = 10;
 int index = sb.indexOf(str, fromIndex);
 System.out.println("index:" + index);*/
 
-System.out.println( sb.substring(0,7) ); 
+        System.out.println(sb.substring(0, 7));
 
-		
-		
-		
-
-
-
-		
-	}
+    }
 }
-
-
-
-
-	
-
-			
-		
